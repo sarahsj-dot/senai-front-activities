@@ -1,0 +1,98 @@
+/* Estilos Globais */
+
+/* Reset  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Container principal da página */
+.pagina {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+/* Título da página */
+.pagina h1 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.pagina > p {
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
+/* Cada seção de componente */
+.secao {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 32px;
+}
+
+/* Título de cada seção */
+.secao h2 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+
+
+.secao hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin-bottom: 20px;
+}
+
+
+
+.breadcrumb {
+  display: flex;        
+  align-items: center; 
+  list-style: none;    
+  gap: 6px;             
+  flex-wrap: wrap;      
+}
+
+/* Cada item da lista */
+.breadcrumb li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+}
+
+/* Links */
+.breadcrumb a {
+  color: #1a56db;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* O separador > */
+.breadcrumb .separador {
+  color: #aaa;
+  font-size: 12px;
+}
+
+/* O item atual */
+.breadcrumb .atual {
+  color: #555;
+  font-weight: bold;
+}

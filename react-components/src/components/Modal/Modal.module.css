@@ -1,0 +1,107 @@
+/* =============================================
+   Modal.module.css
+   Estilos do componente Modal
+   
+   CSS Modules = cada classe fica "presa" nesse
+   componente. Isso evita conflito com outras
+   classes de mesmo nome em outros arquivos.
+   
+   O Vite transforma os nomes automaticamente,
+   ex: .fundo vira algo como .fundo_abc123
+   ============================================= */
+
+/* Fundo escuro que cobre a tela toda */
+.fundo {
+  position: fixed;       /* fica fixo mesmo com scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* preto com transparência */
+  display: flex;
+  align-items: center;   /* centraliza verticalmente */
+  justify-content: center; /* centraliza horizontalmente */
+  z-index: 999;          /* fica na frente de tudo */
+}
+
+/* A caixa branca do modal em si */
+.caixa {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  width: 90%;
+  max-width: 420px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Cabeçalho com o título e o botão de fechar */
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.cabecalho h3 {
+  font-size: 18px;
+  color: #222;
+}
+
+/* Botão X para fechar */
+.btnFechar {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #999;
+  line-height: 1;
+}
+
+.btnFechar:hover {
+  color: #333;
+}
+
+/* Conteúdo dentro do modal */
+.conteudo {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Rodapé com os botões de ação */
+.rodape {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* Botão de cancelar */
+.btnCancelar {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+  color: #555;
+}
+
+.btnCancelar:hover {
+  background: #f5f5f5;
+}
+
+/* Botão de confirmar */
+.btnConfirmar {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #3498db;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btnConfirmar:hover {
+  background: #2980b9;
+}

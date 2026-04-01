@@ -1,0 +1,49 @@
+/* Breadcrumb.css - estilo do componente de navegação */
+
+/* a nav principal que envolve tudo */
+.breadcrumb {
+  display: flex;       /* coloca os itens em linha */
+  align-items: center; /* alinha verticalmente no centro */
+  gap: 4px;            /* espaço entre cada item */
+  list-style: none;    /* remove os bolinhas de lista padrão */
+  padding: 8px 0;
+  flex-wrap: wrap;     /* quebra linha se não couber na tela */
+}
+
+/* cada item dentro da lista */
+.breadcrumb li {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* os links clicáveis */
+.breadcrumb a {
+  color: #0066cc;
+  text-decoration: none; /* remove o sublinhado padrão */
+  font-size: 14px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: background 0.2s; /* animação suave ao passar o mouse */
+}
+
+/* efeito quando o mouse passa por cima */
+.breadcrumb a:hover {
+  background-color: #e8f0fe;
+  text-decoration: underline;
+}
+
+/* o separador entre os itens (ex: ">") */
+.breadcrumb .separador {
+  color: #aaa;
+  font-size: 12px;
+  user-select: none; /* não deixa selecionar o separador ao copiar texto */
+}
+
+/* o item atual (página que estamos) - não é clicável */
+.breadcrumb .ativo {
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 2px 4px;
+}
